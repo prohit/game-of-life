@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{40402CCE-5566-7CEB-1D4A-ED450789E44F}|">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="Assets/Scripts/Cell/CellState.cs" Line="5" Column="10" />
+      <File FileName="Assets/Scripts/Cell/Cell.cs" Line="5" Column="29" />
+      <File FileName="Assets/Scripts/Game/GridCreator.cs" Line="5" Column="25" />
+      <File FileName="Assets/Scripts/Game/SimulationManager.cs" Line="6" Column="2" />
+      <File FileName="Assets/Scripts/Game/GameState.cs" Line="9" Column="1" />
+      <File FileName="Assets/Scripts/EventManager/EventManager.cs" Line="18" Column="45" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GameOfLife" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Cell" expanded="True">
+                  <Node name="Cell.cs" selected="True" />
+                </Node>
+                <Node name="EventManager" expanded="True" />
+                <Node name="Game" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="12ff44d0-1952-4b3f-b854-f2e444cdb013" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
