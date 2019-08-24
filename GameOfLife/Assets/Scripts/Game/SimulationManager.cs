@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SimulationManager : MonoBehaviour
@@ -11,6 +10,9 @@ public class SimulationManager : MonoBehaviour
 
     void Start()
     {
+        currentTime = 0;
+        isRunning = false;
+        isCurrentCycle = false;
         EventManager.AddGameStateChangeEvent(OnGameStateChange);
     }
 
@@ -23,15 +25,21 @@ public class SimulationManager : MonoBehaviour
     {
         switch(state)
         {
-            case GameState.START:
-                currentTime = 0;
+            case GameState.PLAY:
                 isRunning = true;
                 isCurrentCycle = true;
                 break;
-
-            case GameState.END:
+                
+            case GameState.PAUSE:                            
                 isRunning = false;
                 break;
+
+            case GameState.RESET:
+            case GameState.END:
+                currentTime = 0;
+                isCurrentCycle = false;
+                isRunning = false;
+                break;           
         }
     }
 

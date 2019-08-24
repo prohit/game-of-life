@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{40402CCE-5566-7CEB-1D4A-ED450789E44F}|">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game/CellController.cs">
     <Files>
       <File FileName="Assets/Scripts/Cell/CellState.cs" Line="5" Column="10" />
-      <File FileName="Assets/Scripts/Cell/Cell.cs" Line="5" Column="29" />
-      <File FileName="Assets/Scripts/Game/GridCreator.cs" Line="5" Column="25" />
-      <File FileName="Assets/Scripts/Game/SimulationManager.cs" Line="6" Column="2" />
-      <File FileName="Assets/Scripts/Game/GameState.cs" Line="9" Column="1" />
-      <File FileName="Assets/Scripts/EventManager/EventManager.cs" Line="18" Column="45" />
+      <File FileName="Assets/Scripts/Cell/Cell.cs" Line="26" Column="1" />
+      <File FileName="Assets/Scripts/Game/SimulationManager.cs" />
+      <File FileName="Assets/Scripts/Game/GameState.cs" />
+      <File FileName="Assets/Scripts/EventManager/EventManager.cs" />
+      <File FileName="Assets/Scripts/Menu/MenuController.cs" />
+      <File FileName="Assets/Scripts/Game/CellController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,11 +15,12 @@
           <Node name="GameOfLife" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Cell" expanded="True">
-                  <Node name="Cell.cs" selected="True" />
-                </Node>
+                <Node name="Cell" expanded="True" />
                 <Node name="EventManager" expanded="True" />
-                <Node name="Game" expanded="True" />
+                <Node name="Game" expanded="True">
+                  <Node name="CellController.cs" selected="True" />
+                </Node>
+                <Node name="Menu" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -28,7 +30,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="12ff44d0-1952-4b3f-b854-f2e444cdb013" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ad73cc99-209e-42c5-ba35-53434912f683" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

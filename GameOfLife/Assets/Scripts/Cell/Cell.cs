@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Cell : MonoBehaviour
@@ -44,7 +43,7 @@ public class Cell : MonoBehaviour
         name = $"{x}_{y}";
     }
 
-    public void RegisterNeighbours(int limitX, int limitY)
+    public void RegisterNeighbours(int limitX, int limitY, bool restart = false)
     {
         for (int y = Y_Id - 1; y <= Y_Id + 1; y++)
         {
@@ -57,11 +56,13 @@ public class Cell : MonoBehaviour
                     if(neighbour != null)
                     {
                         var neigbourCell = neighbour.GetComponent<Cell>();
-                        neigbourCell.neighbourStateChangeEvent += OnNeigbourStateChange;
+                        if (restart == false)
+                        {
+                            neigbourCell.neighbourStateChangeEvent += OnNeigbourStateChange;
+                        }
                         if(neigbourCell.nextState == CellState.ALIVE)
                         {
                             aliveNeighboursCount++;
-                            Debug.Log(name + ":  active nbr:  " + neigbourCell.name);
                         }
                     }
                 }
@@ -76,6 +77,23 @@ public class Cell : MonoBehaviour
         spriteRenderer.color = (state == CellState.DEAD) ? deadColor : aliveColor;
     }
 
+    private void OnMouseUp()
+    {
+        if (currentState == CellState.ALIVE)
+        {
+            currentState = CellState.DEAD;
+            spriteRenderer.color = deadColor;
+        }
+        else
+        {
+            currentState = CellState.ALIVE;
+            spriteRenderer.color = aliveColor;
+        }
+
+        nextState = currentState;
+        neighbourStateChangeEvent.Invoke(currentState);
+    }
+
     void OnGameStateChange(GameState state)
     {
         switch(state)
@@ -88,6 +106,7 @@ public class Cell : MonoBehaviour
                 LifeChangeDone();
                 break;
 
+            case GameState.RESET:
             case GameState.END:
                 Reset();
                 break;

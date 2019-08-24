@@ -89,6 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 968744715918809854}
   - component: {fileID: 968744715918809841}
+  - component: {fileID: 346547717326636734}
   m_Layer: 0
   m_Name: Cell
   m_TagString: Untagged
@@ -123,5 +124,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60c8eeccc4ba84c77a90ba5ca1566c2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deadColor: {r: 0.754717, g: 0.754717, b: 0.754717, a: 1}
-  aliveColor: {r: 0.29170775, g: 1, b: 0, a: 1}
+  deadColor: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 1}
+  aliveColor: {r: 0.2285568, g: 0.7830189, b: 0, a: 1}
+--- !u!61 &346547717326636734
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968744715918809855}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
